@@ -1,0 +1,29 @@
+body {
+    width: 80px;
+    min-height: 100px;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.btn-common {
+    color:#fff;
+    height: 32px;
+    padding: 0 15px;
+    background-color: #1890ff;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-common :hover {
+    background-color: #40a9ff;
+}
+
+.btn-common :active {
+    background-color: #096dd9;
+}
+
+.btn-common :focus{
+    background-color: #40a9ff;
+}

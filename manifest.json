@@ -1,0 +1,35 @@
+{
+	"manifest_version": 2,
+	"name": "pre-chrome-plug",
+	"version": "1.0.0",
+	"description": "去代码翻译辅助",
+	"icons": {
+		"16": "src/img/icon.png",
+		"48": "src/img/icon.png",
+		"128": "src/img/icon.png"
+	},
+	"browser_action": {
+		"default_icon": "src/img/icon.png",
+		"default_title": "去代码翻译辅助",
+		"default_popup": "popup.html"
+	},
+	"permissions": [
+		"declarativeContent"
+	],
+	"content_scripts": [
+		{
+			"matches": [
+				"<all_urls>"
+			],
+			"js": [
+				"src/js/content_script.js"
+			],
+			"run_at": "document_end"
+		}
+	],
+	"background": {
+		"scripts": [
+			"src/js/background.js"
+		]
+	}
+}
